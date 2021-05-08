@@ -1,0 +1,118 @@
+@import "header.css";
+@import "footer.css";
+
+/*프로필셋팅 메인*/
+.main {
+  padding-top: 54px;
+  background-color: #fafafa;
+}
+
+/*프로필셋팅 섹션*/
+.setting-container {
+  width: 935px;
+  margin: 0 auto;
+  border: 1px solid gainsboro;
+  margin-top: 30px;
+  display: flex;
+  border-radius: 4px;
+}
+
+/*프로필셋팅 아티클*/
+.setting-container .setting__content {
+  border-left: 1px solid gainsboro;
+  display: flex;
+  flex-direction: column;
+  padding-top: 32px;
+  margin-right: 10%;
+}
+
+/*프로필 셋팅 내이미지 + 아이디*/
+.setting-container .setting__content .content-item__01 {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+/*프로필 셋팅 요소들 박스*/
+.setting-container .setting__content form > div {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+/* 유저이미지, 유저아이디*/
+.setting-container .setting__content .content-item__01 .item__img {
+  flex: 2;
+  text-align: right;
+  padding-right: 30px;
+}
+.setting-container .setting__content .content-item__01 .item__img img {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+}
+.setting-container .setting__content .content-item__01 .item__username {
+  flex: 4;
+}
+.setting-container .setting__content .content-item__01 .item__btn h2 {
+  font-size: 18px;
+}
+
+/*form 입력요소 타이틀*/
+.setting-container .setting__content div .item__title {
+  flex: 2;
+  padding-right: 30px;
+  text-align: right;
+  font-size: 17px;
+  font-weight: 600;
+  padding-top: 7px;
+}
+
+/*form 입력요소 인풋박스*/
+.setting-container .setting__content div .item__input {
+  flex: 4;
+  display: flex;
+  flex-direction: column;
+}
+
+/*form 입력요소 인풋*/
+.setting-container .setting__content div .item__input input {
+  border: 1px solid #dbdbdb;
+  height: 32px;
+  padding: 0 10px;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+/*form 입력요소 소개부분*/
+.setting-container .setting__content div .item__input textarea {
+  border: 1px solid #dbdbdb;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 16px;
+}
+
+/* 비즈니스나 반려동물 어쩌고*/
+.setting-container .setting__content div .item__input span {
+  color: #8e8e8e;
+  font-size: 12px;
+  padding-top: 10px;
+}
+
+/*제출버튼*/
+.setting-container .setting__content .content-item__11 .item__input {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/*제출버튼*/
+.setting-container .setting__content .content-item__11 .item__input button {
+  border: 0;
+  background-color: #0095f6;
+  padding: 5px 9px;
+  border-radius: 4px;
+  color: #fff;
+  cursor: pointer;
+}
+
+
