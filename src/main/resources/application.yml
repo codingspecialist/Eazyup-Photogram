@@ -21,12 +21,12 @@ spring:
   jpa:
     open-in-view: true
     hibernate:
-      ddl-auto: update # create
+      ddl-auto: update # create, update, none
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
     show-sql: true
       
-  servlet:
+  servlet: 
     multipart:
       enabled: true
       max-file-size: 2MB
