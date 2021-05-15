@@ -45,9 +45,6 @@ public class AuthController {
 			
 			for(FieldError error : bindingResult.getFieldErrors()) {
 				errorMap.put(error.getField(), error.getDefaultMessage());
-				System.out.println("====================");
-				System.out.println(error.getDefaultMessage());
-				System.out.println("====================");
 			}
 			throw new CustomValidationException("유효성 검사 실패함", errorMap);
 		}else {
