@@ -47,13 +47,13 @@ public class Image { // N,   1
 	
 	// 댓글
 	
-	private LocalDateTime createDate;
-	
 	@Transient // DB에 칼럼이 만들어지지 않는다.
 	private boolean likeState;
 	
 	@Transient
 	private int likeCount;
+	
+	private LocalDateTime createDate;
 	
 	@PrePersist
 	public void createDate() {
