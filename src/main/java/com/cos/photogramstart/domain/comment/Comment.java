@@ -49,7 +49,7 @@ public class Comment {
 	@PrePersist
 	public void createDate() {
 		this.createDate = LocalDateTime.now();
-	}
+	}	
 }
 
 

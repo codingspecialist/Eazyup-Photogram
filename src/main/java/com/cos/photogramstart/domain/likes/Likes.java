@@ -55,4 +55,6 @@ public class Likes { // N
 	public void createDate() {
 		this.createDate = LocalDateTime.now();
 	}
+
+
 }

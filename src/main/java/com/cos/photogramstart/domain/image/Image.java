@@ -65,7 +65,5 @@ public class Image { // N,   1
 	public void createDate() {
 		this.createDate = LocalDateTime.now();
 	}
-	
-	
-	
+
 }
