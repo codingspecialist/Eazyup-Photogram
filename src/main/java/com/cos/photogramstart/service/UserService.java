@@ -48,7 +48,8 @@ public class UserService {
 		}
 		
 		User userEntity = userRepository.findById(principalId).orElseThrow(()->{
-			throw new CustomApiException("유저를 찾을 수 없습니다.");
+			// throw -> return 으로 변경
+			return new CustomApiException("유저를 찾을 수 없습니다.");
 		});
 		userEntity.setProfileImageUrl(imageFileName);
 		
@@ -62,7 +63,8 @@ public class UserService {
 		
 		// SELECT * FROM image WHERE userId = :userId;
 		User userEntity = userRepository.findById(pageUserId).orElseThrow(()-> {
-			throw new CustomException("해당 프로필 페이지는 없는 페이지입니다.");
+			// throw -> return 으로 변경
+			return new CustomException("해당 프로필 페이지는 없는 페이지입니다.");
 		});
 		
 		dto.setUser(userEntity);
