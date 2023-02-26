@@ -30,6 +30,7 @@ public class SecurityConfig {
 				.and()
 				.formLogin()
 				.loginPage("/auth/signin") // GET
+				.loginProcessingUrl("/auth/signin") // POST -> 스프링 시큐리티가 로그인 프로세스 진행
 				.defaultSuccessUrl("/")
 				.and()
 				.oauth2Login() // form로그인도 하는데, oauth2로그인도 할꺼야!!
